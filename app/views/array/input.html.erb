@@ -1,0 +1,5 @@
+<%= form_with url: 'array/result', method: :get do |form| %>
+    <p><%= form.label :query, "Введите массив через пробелы" %></p>
+    <p><%= form.text_field :input_array, value: "1 2 3 -1 -2 15 30 -3" %></p>
+    <p><%= form.submit "Поехали" %></p>
+<% end %>
