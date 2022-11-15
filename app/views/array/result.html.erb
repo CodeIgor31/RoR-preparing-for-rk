@@ -1,5 +1,5 @@
 <p>Исходный массив</p>
-<p><%= @orig_array %></p>
+<p><%= @orig_array.split.map(&:to_f).join(" | ") %></p>
 <p>Новый массив</p>
 <p><%= @fixed %></p>
 
